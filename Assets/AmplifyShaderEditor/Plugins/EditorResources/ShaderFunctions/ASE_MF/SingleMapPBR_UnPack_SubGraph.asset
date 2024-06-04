@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: SingleMapPBR_UnPack_SubGraph
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor\n// Available at the Unity
+    Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=18703\n70;79;1749;714;2249.915;1284.124;1.567038;True;False\nNode;AmplifyShaderEditor.CommentaryNode;39;-1558.127,-1194.114;Inherit;False;1485.031;472.3203;DualColorRamp;12;29;34;31;27;33;32;35;36;37;38;26;30;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;25;-848.3528,-533.3301;Inherit;False;626.0745;208.164;Smoothness
+    Scaler;3;22;23;21;;0.3890174,0.710369,0.8867924,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;19;-1197.694,-186.0033;Inherit;False;1185.631;535.8241;Derivatives
+    to SurfGrad;8;11;14;16;17;18;47;48;49;;0.1090245,0.9245283,0.6057451,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;9;-1785.265,-636.3362;Inherit;False;516.3881;288.3378;Packed
+    Texture Input;2;41;42;;0.990566,0.5466803,0.5466803,1;0;0\nNode;AmplifyShaderEditor.SimpleSubtractOpNode;34;-764.4482,-1019.512;Inherit;True;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.DynamicAppendNode;24;67.31114,-676.2049;Inherit;False;COLOR;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;COLOR;0\nNode;AmplifyShaderEditor.FunctionInput;30;-1497.499,-933.1881;Inherit;False;DarkColor;4;4;True;1;0;FLOAT4;0.7,0.7,0.7,0.4;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.FunctionInput;26;-1508.127,-1144.114;Inherit;False;HighlightColor;4;3;True;1;0;FLOAT4;0.5,0.5,0.5,0.5;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.SaturateNode;23;-387.2787,-437.6552;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.DynamicAppendNode;32;-1099.424,-867.9476;Inherit;True;FLOAT3;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.BreakToComponentsNode;31;-1343.172,-946.9686;Inherit;False;FLOAT4;1;0;FLOAT4;0,0,0,0;False;16;FLOAT;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT;5;FLOAT;6;FLOAT;7;FLOAT;8;FLOAT;9;FLOAT;10;FLOAT;11;FLOAT;12;FLOAT;13;FLOAT;14;FLOAT;15\nNode;AmplifyShaderEditor.BreakToComponentsNode;42;-1522.842,-513.1075;Inherit;False;COLOR;1;0;COLOR;0,0,0,0;False;16;FLOAT;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT;5;FLOAT;6;FLOAT;7;FLOAT;8;FLOAT;9;FLOAT;10;FLOAT;11;FLOAT;12;FLOAT;13;FLOAT;14;FLOAT;15\nNode;AmplifyShaderEditor.FunctionInput;41;-1732.371,-521.063;Inherit;True;PBRColor;5;0;True;1;0;COLOR;0,0,0,0;False;1;COLOR;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;22;-573.7891,-460.1662;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionNode;54;-767.9703,-117.3467;Inherit;False;V2URPRemap;-1;;20;8c2638cacf87f7c498d39b5694f5f119;0;3;2;FLOAT2;0,0;False;3;FLOAT2;0,1;False;4;FLOAT2;-1,1;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.Vector2Node;47;-1096.968,-58.20728;Inherit;False;Constant;_Vector0;Vector
+    0;0;0;Create;True;0;0;False;0;False;0,1;0,0;0;3;FLOAT2;0;FLOAT;1;FLOAT;2\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;33;-989.1306,-1005.068;Inherit;True;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;17;-174.0642,-44.84782;Inherit;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SmoothstepOpNode;35;-565.9072,-1033.695;Inherit;False;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionNode;49;-463.6112,-89.69844;Inherit;False;SurfgradTBN;-1;;17;901cb5b1c9308e14183f641fc2fa7727;0;3;1;FLOAT2;0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.VertexTangentNode;14;-989.8137,62.51932;Inherit;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.VertexBinormalNode;16;-991.7434,203.4633;Inherit;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.DynamicAppendNode;11;-1181.514,-140.3766;Inherit;False;FLOAT2;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.BreakToComponentsNode;38;-315.7294,-944.1888;Inherit;False;FLOAT3;1;0;FLOAT3;0,0,0;False;16;FLOAT;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT;5;FLOAT;6;FLOAT;7;FLOAT;8;FLOAT;9;FLOAT;10;FLOAT;11;FLOAT;12;FLOAT;13;FLOAT;14;FLOAT;15\nNode;AmplifyShaderEditor.BreakToComponentsNode;27;-1339.01,-1155.906;Inherit;True;FLOAT4;1;0;FLOAT4;0,0,0,0;False;16;FLOAT;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT;5;FLOAT;6;FLOAT;7;FLOAT;8;FLOAT;9;FLOAT;10;FLOAT;11;FLOAT;12;FLOAT;13;FLOAT;14;FLOAT;15\nNode;AmplifyShaderEditor.CommentaryNode;40;227.9888,-415.1418;Inherit;False;290.6001;229.7592;OutPut;2;0;20;;0.8117647,0.4113261,0.1568627,1;0;0\nNode;AmplifyShaderEditor.Vector2Node;48;-936.5669,-69.40726;Inherit;False;Constant;_Vector1;Vector
+    1;0;0;Create;True;0;0;False;0;False;-1,1;0,0;0;3;FLOAT2;0;FLOAT;1;FLOAT;2\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;37;-246.8076,-1064.525;Inherit;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.LerpOp;36;-408.149,-1077.97;Inherit;False;3;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;18;-424.0586,66.97156;Inherit;False;BumpScaler;1;1;True;1;0;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.DynamicAppendNode;29;-703.2677,-1140.105;Inherit;False;FLOAT3;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;21;-798.353,-483.3302;Inherit;False;SmoothnessScaler;1;2;True;1;0;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;20;277.9887,-365.1418;Inherit;False;False;-1;AlbedoRGB_SmoothA;0;True;1;0;COLOR;0,0,0,0;False;1;COLOR;0\nNode;AmplifyShaderEditor.FunctionOutput;0;299.9124,-281.9828;Inherit;False;True;-1;SurfaceGradient;1;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nWireConnection;34;0;27;3\nWireConnection;34;1;33;0\nWireConnection;24;0;38;0\nWireConnection;24;1;38;1\nWireConnection;24;2;38;2\nWireConnection;24;3;23;0\nWireConnection;23;0;22;0\nWireConnection;32;0;31;0\nWireConnection;32;1;31;1\nWireConnection;32;2;31;2\nWireConnection;31;0;30;0\nWireConnection;42;0;41;0\nWireConnection;22;0;21;0\nWireConnection;22;1;42;3\nWireConnection;54;2;11;0\nWireConnection;54;3;47;0\nWireConnection;54;4;48;0\nWireConnection;33;0;27;3\nWireConnection;33;1;31;3\nWireConnection;17;0;49;0\nWireConnection;17;1;18;0\nWireConnection;35;0;42;2\nWireConnection;35;1;27;3\nWireConnection;35;2;34;0\nWireConnection;49;1;54;0\nWireConnection;49;2;14;0\nWireConnection;49;3;16;0\nWireConnection;11;0;42;0\nWireConnection;11;1;42;1\nWireConnection;38;0;37;0\nWireConnection;27;0;26;0\nWireConnection;37;0;36;0\nWireConnection;37;1;42;2\nWireConnection;36;0;29;0\nWireConnection;36;1;32;0\nWireConnection;36;2;35;0\nWireConnection;29;0;27;0\nWireConnection;29;1;27;1\nWireConnection;29;2;27;2\nWireConnection;20;0;24;0\nWireConnection;0;0;17;0\nASEEND*/\n//CHKSM=DACEE795496FD66A1BCC45A74BC50F2E4AB682CC"
+  m_functionName: 
+  m_description: 'Used in Single Texture PBR Shaders.
+
+    This is for multilayer
+    blend.'
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 3
+  m_customNodeCategory: 
+  m_previewPosition: 0
+  m_hidden: 0

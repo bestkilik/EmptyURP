@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: TopCoverSnow
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor\n// Available at the Unity
+    Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=18933\n1920;0;1920;1019;2363.383;575.0204;1;True;False\nNode;AmplifyShaderEditor.SaturateNode;56;-77.39226,6.371949;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.OneMinusNode;9;-1185.351,-24.24195;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.LerpOp;34;-455.4289,497.9195;Inherit;False;3;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.BreakToComponentsNode;8;-1608.151,-158.9651;Inherit;False;FLOAT3;1;0;FLOAT3;0,0,0;False;16;FLOAT;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT;5;FLOAT;6;FLOAT;7;FLOAT;8;FLOAT;9;FLOAT;10;FLOAT;11;FLOAT;12;FLOAT;13;FLOAT;14;FLOAT;15\nNode;AmplifyShaderEditor.RegisterLocalVarNode;17;81.54143,3.744923;Inherit;False;snowMask;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.OneMinusNode;57;-845.5403,-419.5669;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.AbsOpNode;73;-1299.093,-164.4192;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;14;-632.3508,1.758039;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;10;-1036.231,23.60494;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0.333;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleDivideOpNode;12;-810.3506,0.7580385;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.NormalizeNode;44;125.8678,642.0689;Inherit;False;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;1;-1802.46,-163.9348;Inherit;False;World
+    Normal;3;1;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.Vector3Node;47;-425.1364,645.3419;Inherit;False;Constant;_Vector1;Vector
+    1;5;0;Create;True;0;0;0;False;0;False;0,0,1;0,0,0;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.RangedFloatNode;36;-703.4291,536.9193;Inherit;False;Constant;_Float1;Float
+    1;5;0;Create;True;0;0;0;False;0;False;0.8;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.Vector3Node;35;-869.4291,467.9195;Inherit;False;Constant;_Vector0;Vector
+    0;5;0;Create;True;0;0;0;False;0;False;0,0,1;0,0,0;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.RangedFloatNode;13;-932.3508,220.7573;Inherit;False;Property;_SnowThickness;SnowThickness;5;0;Create;True;0;0;0;False;0;False;1;1;0;2;0;1;FLOAT;0\nNode;AmplifyShaderEditor.SaturateNode;15;-478.6111,9.089389;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;29;-895.9012,381.1557;Inherit;False;Tangent
+    Normal;3;0;False;1;0;FLOAT3;0,0,1;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.OneMinusNode;72;-1095.093,-172.4192;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;74;-504.7853,-287.4299;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleSubtractOpNode;11;-976.351,-79.24298;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleSubtractOpNode;51;-1392.115,-564.9476;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;40;-16.16835,618.3969;Inherit;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.ToggleSwitchNode;76;-336.8465,-221.4994;Inherit;False;Property;_EnableGroundSnow;Enable
+    Ground Snow;0;0;Create;True;0;0;0;False;2;Space(5);Header(Ground Snow);False;0;True;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.PowerNode;59;-662.1384,-360.8061;Inherit;False;False;2;0;FLOAT;0;False;1;FLOAT;2;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;77;-656.873,-245.2433;Inherit;False;Constant;_Float0;Float
+    0;6;0;Create;True;0;0;0;False;0;False;0;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.WorldNormalVector;7;-1980.181,-167.5489;Inherit;False;False;1;0;FLOAT3;0,0,1;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.SmoothstepOpNode;75;-734.8655,-137.9284;Inherit;False;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleDivideOpNode;52;-1197.412,-491.3065;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SaturateNode;58;-999.6348,-448.786;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;16;-1482.351,16.75802;Inherit;False;Property;_SnowRange;SnowRange;4;0;Create;True;0;0;0;False;2;Space(10);Header(Top
+    Snow);False;1;0;0;1;0;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;61;-966.8049,-340.5914;Inherit;False;Property;_GroundSnowShrinkPower;Ground
+    Snow Shrink Power;3;0;Create;True;0;0;0;False;0;False;2;0;1;8;0;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;49;-1756.664,-403.5005;Inherit;False;Property;_GroundSnowRange;Ground
+    Snow Range;2;0;Create;True;0;0;0;False;0;False;0.4;0;0;2;0;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;48;-1657.672,-502.4631;Inherit;False;Property;_GroundSnowHeight;Ground
+    Snow Height;1;0;Create;True;0;0;0;False;0;False;0;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;55;-224.3749,-31.94402;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMaxOpNode;71;-1436.548,-402.1538;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0.0001;False;1;FLOAT;0\nNode;AmplifyShaderEditor.WorldPosInputsNode;50;-1629.555,-707.1;Inherit;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.FunctionOutput;0;287.1576,10.99702;Inherit;False;True;-1;Snow
+    Mask;1;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;31;278.5069,521.4079;Inherit;False;False;-1;Snow
+    Normal;0;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nWireConnection;56;0;55;0\nWireConnection;9;0;16;0\nWireConnection;34;0;29;0\nWireConnection;34;1;35;0\nWireConnection;34;2;36;0\nWireConnection;8;0;1;0\nWireConnection;17;0;56;0\nWireConnection;57;0;58;0\nWireConnection;73;0;8;1\nWireConnection;14;0;12;0\nWireConnection;14;1;13;0\nWireConnection;10;0;16;0\nWireConnection;12;0;11;0\nWireConnection;12;1;10;0\nWireConnection;44;0;40;0\nWireConnection;1;0;7;0\nWireConnection;15;0;14;0\nWireConnection;72;0;73;0\nWireConnection;74;0;59;0\nWireConnection;74;1;75;0\nWireConnection;11;0;8;1\nWireConnection;11;1;9;0\nWireConnection;51;0;50;2\nWireConnection;51;1;48;0\nWireConnection;40;0;34;0\nWireConnection;40;1;47;0\nWireConnection;76;0;77;0\nWireConnection;76;1;74;0\nWireConnection;59;0;57;0\nWireConnection;59;1;61;0\nWireConnection;75;0;72;0\nWireConnection;52;0;51;0\nWireConnection;52;1;71;0\nWireConnection;58;0;52;0\nWireConnection;55;0;76;0\nWireConnection;55;1;15;0\nWireConnection;71;0;49;0\nWireConnection;0;0;17;0\nWireConnection;31;0;44;0\nASEEND*/\n//CHKSM=AC94CA543EAC6F9E1CEE2D46F6A54D80F0AED553"
+  m_functionName: 
+  m_description: 
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 1
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 3
+  m_customNodeCategory: 
+  m_previewPosition: 2
+  m_hidden: 0
+  m_url: 
